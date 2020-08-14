@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { NzButtonSize } from 'ng-zorro-antd/button';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'tf-zorro';
+	title = 'Zorro Transform Components';
+	isCollapsed = false;
 }
+
+

@@ -1,0 +1,175 @@
+
+
+<div class="logo"></div>
+
+
+<ul nz-menu nzMode="inline" style="background-color:#ffffff;">
+	<li nz-submenu nzTitle="Navigation One" nzIcon="mail" nzOpen>
+		<ul>
+			<li nz-menu-group nzTitle="Item 1">
+				<ul>
+					<li nz-menu-item nzSelected>Option 1</li>
+					<li nz-menu-item>Option 2</li>
+				</ul>
+			</li>
+			<li nz-menu-group nzTitle="Item 2">
+				<ul>
+					<li nz-menu-item>Option 3</li>
+					<li nz-menu-item>Option 4</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li nz-submenu nzTitle="Navigation Two" nzIcon="appstore">
+		<ul>
+			<li nz-menu-item>Option 5</li>
+			<li nz-menu-item>Option 6</li>
+			<li nz-submenu nzTitle="Submenu">
+				<ul>
+					<li nz-menu-item>Option 7</li>
+					<li nz-menu-item>Option 8</li>
+					<li nz-submenu nzTitle="Submenu">
+						<ul>
+							<li nz-menu-item>Option 9</li>
+							<li nz-menu-item>Option 10</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li nz-submenu nzTitle="Navigation Three" nzIcon="setting">
+		<ul>
+			<li nz-menu-item>Option 11</li>
+			<li nz-menu-item>Option 12</li>
+			<li nz-menu-item>Option 13</li>
+		</ul>
+	</li>
+</ul>
+
+<ul 
+	nz-menu 
+	nzMode="inline" 
+	nzTheme="dark" 
+	[nzInlineCollapsed]="isCollapsed"
+>
+	<li 
+		nz-menu-item
+	>
+		<span>
+			<span class="nav-text">Navigation 1</span>
+		</span>
+	</li>
+
+
+	<li 
+		nz-submenu
+		nzTitle="Navigation Two"
+	>
+		<span>
+			<span class="nav-text">Navigation 2</span>
+		</span>
+	</li>
+
+	<li 
+		nz-menu-item 
+		nz-tooltip 
+		nzTooltipPlacement="right" 
+		[nzTitle]="isCollapsed ? 'Navigation One' : ''" 
+		nzSelected
+	>
+		<i nz-icon nzType="mail"></i>
+		<span>Navigation One</span>
+	</li>
+	<li nz-submenu nzTitle="Navigation Two" nzIcon="appstore">
+		<ul>
+			<li nz-menu-item>Option 5</li>
+			<li nz-menu-item>Option 6</li>
+			<li nz-submenu nzTitle="Submenu">
+				<ul>
+					<li nz-menu-item>Option 7</li>
+					<li nz-menu-item>Option 8</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li nz-submenu nzTitle="Navigation Three" nzIcon="setting">
+		<ul>
+			<li nz-menu-item>Option 9</li>
+			<li nz-menu-item>Option 10</li>
+			<li nz-menu-item>Option 11</li>
+		</ul>
+	</li>
+</ul>
+<!-- <ul 
+	nz-menu [nzTheme]="'dark'" 
+	[nzMode]="'inline'" 
+	[nzInlineCollapsed]="isCollapsed"
+>
+	<li nz-menu-item>
+		<span><i nz-icon type="user"></i><span class="nav-text">nav 1</span></span>
+	</li>
+	<li nz-menu-item>
+		<span><i nz-icon type="video-camera"></i><span class="nav-text">nav 2</span></span>
+	</li>
+	<li nz-menu-item>
+		<span><i nz-icon type="upload"></i><span class="nav-text">nav 3</span></span>
+	</li>
+	<li nz-menu-item>
+		<span><i nz-icon type="user"></i><span class="nav-text">nav 4</span></span>
+	</li>
+</ul> -->
+
+
+
+<!-- 
+			<nz-sider 
+				
+				nzCollapsible 
+				[(nzCollapsed)]="isCollapsed" 
+
+				[nzWidth]="width" 
+				[nzReverseArrow]="isReverseArrow"
+
+				[nzTrigger]="triggerTemplate"
+				
+				[nzBreakpoint]="'lg'"
+				[nzCollapsedWidth]="0"
+        [nzZeroTrigger]="zeroTrigger"
+			>
+        <div class="logo"></div>
+				<ul 
+					nz-menu [nzTheme]="'dark'" 
+					[nzMode]="'vertical'" 
+					[nzInlineCollapsed]="isCollapsed"
+					[nzInlineIndent]="nzCollapsedWidth"
+					>
+          <li nz-submenu>
+            <span title>
+							<i nz-icon type="user"></i><span class="nav-text">User</span>
+						</span>
+            <ul>
+              <li nz-menu-item>GUY!!!! Tom</li>
+              <li nz-menu-item>Bill</li>
+              <li nz-menu-item>Alex</li>
+            </ul>
+          </li>
+          <li nz-submenu>
+            <span title><i nz-icon type="team"></i><span class="nav-text">Team</span></span>
+            <ul>
+              <li nz-menu-item>Team 1</li>
+              <li nz-menu-item>Team 2</li>
+            </ul>
+          </li>
+          <li nz-menu-item>
+            <span><i nz-icon type="file"></i><span class="nav-text">File</span></span>
+          </li>
+        </ul>
+			</nz-sider>
+			
+
+
+			<ng-template #zeroTrigger>
+				<i nz-icon type="menu-fold" theme="outline"></i>
+			</ng-template>
+		 -->

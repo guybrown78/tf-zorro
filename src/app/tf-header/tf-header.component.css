@@ -1,0 +1,16 @@
+
+.logo {
+	width: 120px;
+	height: 31px;
+	background: #fff;
+	margin: 16px 24px 16px 0;
+	float: left;
+}
+
+.client-logo {
+	width: 120px;
+	height: 31px;
+	background: #fff;
+	margin: 16px 24px 16px 0;
+	float: right;
+}
