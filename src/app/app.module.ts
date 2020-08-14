@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgZorroAntdModule, NZ_I18N, en_GB } from 'ng-zorro-antd';
-import { FormsModule } from '@angular/forms';
+
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
@@ -24,6 +25,9 @@ import { TfStatsCardComponent } from './tf-stats-card/tf-stats-card.component';
 import { TfTabsComponent } from './tf-tabs/tf-tabs.component';
 import { TfTableComponent } from './tf-table/tf-table.component';
 import { TfCourseActionComponent } from './tf-course-action/tf-course-action.component';
+import { TfFormComponent } from './tf-form/tf-form.component';
+import { TfListComponent } from './tf-list/tf-list.component';
+
 // import { TestSliderComponent } from './test-slider/test-slider.component';
 // import { DisapearsSliderComponent } from './disapears-slider/disapears-slider.component';
 
@@ -44,6 +48,9 @@ registerLocaleData(en);
     TfTabsComponent,
     TfTableComponent,
     TfCourseActionComponent,
+    TfFormComponent,
+    TfListComponent,
+
     // TestSliderComponent,
     // DisapearsSliderComponent
   ],
@@ -51,7 +58,8 @@ registerLocaleData(en);
     BrowserModule,
     AppRoutingModule,
     NgZorroAntdModule,
-    FormsModule,
+		FormsModule,
+		ReactiveFormsModule,
     HttpClientModule,
 		BrowserAnimationsModule,
 		NzButtonModule,

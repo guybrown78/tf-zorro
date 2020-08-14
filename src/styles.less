@@ -35,6 +35,18 @@
 @grey-800: #9BA7AA;
 @grey-900: #727A7C;
 
+@aqua-50: #EAFEFB;
+@aqua-100: #CBFCF6;
+@aqua-200: #ADFBF1;
+@aqua-300: #8EFAEB;
+@aqua-400: #84FAEA;
+@aqua-500: #50F8E1;
+@aqua-600: #32F7DC;
+@aqua-700: #2AD2BB;
+@aqua-800: #25B9A4;
+@aqua-900: #1B8778;
+
+
 @blue-6 : @blue-600;
 
 
@@ -78,9 +90,9 @@
 
 @font-family : 'Roboto Condensed', sans-serif;
 @code-family : "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-@heading-color : @blue-600;
+@heading-color : @grey-600;
 @text-color : @navy-600;//fade(#000, 65%);
-@text-color-secondary :@blue-600;// fade(#000, 45%);
+@text-color-secondary :@grey-600;// fade(#000, 45%);
 @heading-color-dark : #FFFFFF; //fade(#fff, 100%);
 @text-color-dark : #FFFFFF; //fade(#fff, 85%);
 @text-color-secondary-dark: @grey-300; //fade(#fff, 65%);
@@ -611,4 +623,18 @@ body {
 }
 .grey{
 	background-color: @grey-600;
+}
+
+.ant-form{
+	margin: 0 auto;
+}
+.ant-form-item-control-wrapper{
+	width:100%;
+}
+.ant-form-item{
+	display: flex;
+	flex-direction: column;
+}
+.ant-form-item .ant-form-item-label{
+	text-align: left;
 }
