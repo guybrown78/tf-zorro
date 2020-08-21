@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 
+import { TfNgCoreModule } from 'tf-ng-core'
+
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { TfLayoutComponent } from './tf-layout/tf-layout.component';
@@ -27,6 +29,8 @@ import { TfTableComponent } from './tf-table/tf-table.component';
 import { TfCourseActionComponent } from './tf-course-action/tf-course-action.component';
 import { TfFormComponent } from './tf-form/tf-form.component';
 import { TfListComponent } from './tf-list/tf-list.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HeaderComponent } from './header/header.component';
 
 // import { TestSliderComponent } from './test-slider/test-slider.component';
 // import { DisapearsSliderComponent } from './disapears-slider/disapears-slider.component';
@@ -50,6 +54,8 @@ registerLocaleData(en);
     TfCourseActionComponent,
     TfFormComponent,
     TfListComponent,
+    NavigationComponent,
+    HeaderComponent,
 
     // TestSliderComponent,
     // DisapearsSliderComponent
@@ -62,6 +68,7 @@ registerLocaleData(en);
 		ReactiveFormsModule,
     HttpClientModule,
 		BrowserAnimationsModule,
+		TfNgCoreModule,
 		NzButtonModule,
 		NzLayoutModule
   ],

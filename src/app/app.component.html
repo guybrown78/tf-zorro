@@ -1,4 +1,4 @@
-<nz-layout class="main-layout">
+<!-- <nz-layout class="main-layout">
 	<nz-sider
 		nzCollapsible
 		[(nzCollapsed)]="isCollapsed"
@@ -6,7 +6,6 @@
 		[nzCollapsedWidth]="0"
 		[nzZeroTrigger]="zeroTrigger"
 	>
-		<!-- <app-tf-slider (isCollapsed)="isCollapsed"></app-tf-slider> -->
 		<app-tf-slider-menu></app-tf-slider-menu>
 	</nz-sider> 
 	
@@ -21,4 +20,12 @@
 
 <ng-template class="slider-toggle" #zeroTrigger>
 	<i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'" theme="outline"></i>
-</ng-template>
+</ng-template> -->
+
+
+<tf-ng-header app-title="Transform"></tf-ng-header>
+<app-navigation></app-navigation>
+
+<tf-ng-main-content>
+	<router-outlet #outlet="outlet"></router-outlet>
+</tf-ng-main-content>
