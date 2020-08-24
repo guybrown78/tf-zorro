@@ -1,52 +1,55 @@
 
-<div class="tf-card-wrapper navy">
-      <nz-row [nzGutter]="16">
 
-        <nz-col [nzSpan]="8">
+<tf-ng-card colour="navy">
+	<nz-row [nzGutter]="16">
 
-          <nz-card>
-            <nz-statistic
-              [nzValue]="1"
-              [nzTitle]="'NOT STARTED'"
-              [nzPrefix]="prefixTplOne"
-              [nzSuffix]="''"
-              [nzValueStyle]="{ color: '#CF1322' }"
-            >
-            </nz-statistic>
-            <ng-template #prefixTplOne></ng-template>
-					</nz-card>
-					
-				</nz-col>
-				
-        <nz-col [nzSpan]="8">
-          <nz-card>
-            <nz-statistic
-              [nzValue]="14"
-              [nzTitle]="'completed'"
-              [nzPrefix]="prefixTplTwo"
-              [nzSuffix]="''"
-              [nzValueStyle]="{ color: '#3F8600' }"
-            >
-            </nz-statistic>
-            <ng-template #prefixTplTwo></ng-template>
-          </nz-card>
-				</nz-col>
-				
+		<nz-col [nzSpan]="8">
 
-				<nz-col [nzSpan]="8">
-          <nz-card>
-            <nz-statistic
-              [nzValue]="42"
-              [nzTitle]="'In Progress'"
-              [nzPrefix]="prefixTplTwo"
-              [nzSuffix]="''"
-              [nzValueStyle]="{ color: '#b97129' }"
-            >
-            </nz-statistic>
-            <ng-template #prefixTplTwo></ng-template>
-          </nz-card>
-				</nz-col>
-				
-      </nz-row>
-</div>
+			<nz-card>
+				<nz-statistic
+					[nzValue]="1"
+					[nzTitle]="'NOT STARTED'"
+					[nzPrefix]="prefixTplOne"
+					[nzSuffix]="''"
+					[nzValueStyle]="{ color: '#CF1322' }"
+				>
+				</nz-statistic>
+				<ng-template #prefixTplOne></ng-template>
+			</nz-card>
+			
+		</nz-col>
+		
+		<nz-col [nzSpan]="8">
+			<nz-card>
+				<nz-statistic
+					[nzValue]="14"
+					[nzTitle]="'completed'"
+					[nzPrefix]="prefixTplTwo"
+					[nzSuffix]="''"
+					[nzValueStyle]="{ color: '#3F8600' }"
+				>
+				</nz-statistic>
+				<ng-template #prefixTplTwo></ng-template>
+			</nz-card>
+		</nz-col>
+		
+
+		<nz-col [nzSpan]="8">
+			<nz-card>
+				<nz-statistic
+					[nzValue]="42"
+					[nzTitle]="'In Progress'"
+					[nzPrefix]="prefixTplTwo"
+					[nzSuffix]="''"
+					[nzValueStyle]="{ color: '#b97129' }"
+				>
+				</nz-statistic>
+				<ng-template #prefixTplTwo></ng-template>
+			</nz-card>
+		</nz-col>
+		
+	</nz-row>
+</tf-ng-card>
+      
+
   

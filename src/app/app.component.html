@@ -1,29 +1,4 @@
-<!-- <nz-layout class="main-layout">
-	<nz-sider
-		nzCollapsible
-		[(nzCollapsed)]="isCollapsed"
-		[nzBreakpoint]="'xxl'"
-		[nzCollapsedWidth]="0"
-		[nzZeroTrigger]="zeroTrigger"
-	>
-		<app-tf-slider-menu></app-tf-slider-menu>
-	</nz-sider> 
-	
-	
-	<nz-layout>
-		<app-tf-header></app-tf-header>
-		<nz-content class="main-content">
-			<router-outlet #outlet="outlet"></router-outlet>
-		</nz-content>
-	</nz-layout>
-</nz-layout>
-
-<ng-template class="slider-toggle" #zeroTrigger>
-	<i nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'" theme="outline"></i>
-</ng-template> -->
-
-
-<tf-ng-header app-title="Transform"></tf-ng-header>
+<app-header></app-header>
 <app-navigation></app-navigation>
 
 <tf-ng-main-content>
